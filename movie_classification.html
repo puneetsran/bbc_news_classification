@@ -14859,8 +14859,8 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The RMSE is very high (compared to week 3 homework which was around or below 1). The reason why it did not work was because the data is too sparse and that can cause problems with trying to predictions.</p>
-<p>Some methods which might fix this problem is if we use PCA which would reduce the dimension of the matrix and could result in a better performing model.</p>
+<p>The RMSE is very high (compared to week 3 homework which was around or below 1). The reason why it did not work was because the data is too sparse and that can cause problems with trying to predictions. Furthermore, the unknown ratings are kept as zeros in the matrix which is not accurate as the actual rating could be greater than 0. This produces incorrect values for w and h.</p>
+<p>Some methods which might fix this problem is if just use the same value for unknown ratings such as 2.5 or making sure that they are not zero.</p>
 
 </div>
 </div>
